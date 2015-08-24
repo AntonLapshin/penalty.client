@@ -1,0 +1,39 @@
+.timer {
+    opacity: 0.3;
+    position: absolute;
+    right: 20px;
+    top: 488px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.timer .desc {
+    font-size: 20pt;
+}
+
+.timer .time {
+    font-size: 120pt;
+}
+
+.timer p {
+    margin: 0;
+    line-height: 1;
+}
+
+.timer:hover .popup{
+    display: block;
+}
+
+.timer .popup  {
+    position: absolute;
+    display: none;
+    background-color: #718a42;
+    opacity: 1;
+    margin: auto;
+    width: 200px;
+    left: -190px;
+    top: 5px;
+    color: white;
+    padding: 3px;
+    font-weight: bold;
+}
