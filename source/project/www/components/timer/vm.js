@@ -65,11 +65,31 @@ define([
                 }
             }, 1000);
 
+            var self = this;
+            window.ad2$
+                .css({
+                    'z-index': 1000,
+                    cursor: 'pointer',
+                    position: 'absolute',
+                    top: '418px',
+                    left: 0
+                })
+                .click(function(){
+                    self.isVisible(false);
+                    _isBought = true;
+                    window.ad2$.css('z-index', 0);
+                });
+
+
             this.isVisible(true);
         },
 
         highlight: function () {
             if (_isBought) return false;
+            if (window.cfg.debug) {
+                this.isVisible(false);
+                return false;
+            }
 
             if (!_seconds)
                 return false;
@@ -77,7 +97,7 @@ define([
             $('.timer')
                 .animate({opacity: 1}, 200)
                 .animate({color: 'red'}, 100)
-                .animate({opacity: 0.3}, 500);
+                .animate({opacity: 0.5}, 500);
 
             return true;
         }

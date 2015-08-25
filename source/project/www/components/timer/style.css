@@ -1,5 +1,5 @@
 .timer {
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute;
     right: 20px;
     top: 488px;
@@ -8,7 +8,7 @@
 }
 
 .timer .desc {
-    font-size: 20pt;
+    font-size: 14pt;
 }
 
 .timer .time {

@@ -32,7 +32,8 @@ define(['jquery', 'fb', 'plugins/format'], function ($, fb, format) {
         },
 
         getUnknowImg: function () {
-            return '//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/p50x50/1379841_10150004552801901_469209496895221757_n.jpg?oh=42bb667fb563ed534944a33a8a6ddb70&oe=54FFCC33&__gda__=1427197980_25dc5798d0771c03aef7a074e8a38c99';
+            return '//vk.com/images/deactivated_50.gif';
+            //return '//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c15.0.50.50/p50x50/1379841_10150004552801901_469209496895221757_n.jpg?oh=42bb667fb563ed534944a33a8a6ddb70&oe=54FFCC33&__gda__=1427197980_25dc5798d0771c03aef7a074e8a38c99';
         },
 
         invite: function () {
@@ -99,6 +100,10 @@ define(['jquery', 'fb', 'plugins/format'], function ($, fb, format) {
                     defer.resolve(users);
                 });
             });
+        },
+
+        getCommunityHref: function(){
+            return '//www.facebook.com/groups/1504697033086131/';
         }
     }
 });
