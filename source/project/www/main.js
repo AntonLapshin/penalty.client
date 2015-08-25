@@ -1,9 +1,9 @@
 window.cfg = {
     debug: false,
-    payments: false,
+    payments: true,
     publish: true,
     server: "https://penalty.herokuapp.com/",
-    language: "en"
+    language: "ru"
 };
 
 requirejs.config({
@@ -55,7 +55,7 @@ require([
     'jquery',
     'text',
     'social/social',
-    'social/demo',
+    'social/vk',
     'server/server',
     'server/heroku'
 ], function (ko,

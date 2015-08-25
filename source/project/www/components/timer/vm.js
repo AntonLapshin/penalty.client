@@ -65,7 +65,6 @@ define([
                 }
             }, 1000);
 
-            var self = this;
             window.ad2$
                 .css({
                     'z-index': 1000,

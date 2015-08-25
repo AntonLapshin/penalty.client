@@ -113,7 +113,7 @@ www/main.js
 www/lib/text.js
 www/social/social.js
 www/plugins/format.js
-www/social/fb.js
+www/social/vk.js
 www/server/server.js
 www/plugins/ajax.js
 www/server/heroku.js
