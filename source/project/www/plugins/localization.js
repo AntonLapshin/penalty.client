@@ -65,7 +65,7 @@ define(['ko'], function(ko){
 
         psychicTextEnabled: ['В этом матче Вам помогает экстрасенс', 'In that match the Psychic helps you'],
 
-        txtTimer:       ['Нажмите на рекламный банер чтобы не ждать',       'Click at the left banner to stop the timer'],
+        txtTimer:       ['Нажмите на рекламу внизу чтобы не ждать',       'Click at the bottom banner to stop the timer'],
         txtTimerVote:   ['За 1 голос ты можешь начать новый турнир прямо сейчас',       'For 1 vote you can continue game right now']
     };
 

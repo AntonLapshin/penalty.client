@@ -1,9 +1,9 @@
 window.cfg = {
     debug: false,
-    payments: true,
+    payments: false,
     publish: true,
     server: "https://penalty.herokuapp.com/",
-    language: "ru"
+    language: "en"
 };
 
 requirejs.config({
@@ -44,7 +44,7 @@ function adsDelay(){
             });
 
             ad2$.css('z-index', 0);
-            ad2$.css('z-index', 0);
+            window.ad1$ = ad1$;
             window.ad2$ = ad2$;
         }, 0);
     });
@@ -55,7 +55,7 @@ require([
     'jquery',
     'text',
     'social/social',
-    'social/vk',
+    'social/fb',
     'server/server',
     'server/heroku'
 ], function (ko,
