@@ -1,2 +1,2 @@
-"python" "C:\Program Files\Google\google_appengine\appcfg.py" --oauth2 update "C:\projects\penalty.client.git\app\app.yaml"
+"python" "C:\Program Files (x86)\Google\google_appengine\appcfg.py" --oauth2 update "C:\projects\penalty.client.git\app"
 PAUSE
