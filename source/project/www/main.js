@@ -27,29 +27,6 @@ requirejs.config({
     }
 });
 
-function adsDelay(){
-    return $.Deferred(function(defer){
-        var ads$ = $('body > div').not('#container, .spinner, #fb-root');
-        var ad1$ = ads$.eq(0);
-        var ad2$ = ads$.eq(1);
-        ads$.css('z-index', 1000);
-
-        window.setTimeout(function(){
-            defer.resolve();
-            ad1$.css({
-                position: 'absolute',
-                padding: 0,
-                top: '800px',
-                left: 0
-            });
-
-            ad2$.css('z-index', 0);
-            window.ad1$ = ad1$;
-            window.ad2$ = ad2$;
-        }, 0);
-    });
-}
-
 require([
     'ko',
     'jquery',
@@ -65,7 +42,7 @@ require([
              socialInstance,
              server,
              serverInstance) {
-    $.when.apply($, [social.init(socialInstance), server.init(serverInstance), adsDelay()])
+    $.when.apply($, [social.init(socialInstance), server.init(serverInstance)])
         .then(function () {
             $('*').on('selectstart', function () {
                 return false;
