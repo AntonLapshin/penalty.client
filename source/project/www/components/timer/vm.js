@@ -72,8 +72,8 @@ define([
                     position: 'absolute',
                     top: '418px',
                     left: 0
-                });
-            window.ad1$.click(function(){
+                })
+                .click(function(){
                     self.isVisible(false);
                     _isBought = true;
                     window.ad2$.css('z-index', 0);
