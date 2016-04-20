@@ -1,4 +1,4 @@
-define(['jquery', 'fb', 'plugins/format'], function ($, fb, format) {
+define(['jquery', 'plugins/format'], function ($, format) {
 
     var APP_ID = '381019665399908';
 
