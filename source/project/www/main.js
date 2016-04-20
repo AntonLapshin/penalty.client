@@ -27,6 +27,16 @@ requirejs.config({
     }
 });
 
+function ad(){
+    var defer = $.Deferred();
+
+    window.setTimeout(function(){
+        defer.resolve();
+    }, 10000);
+
+    return defer;
+}
+
 require([
     'ko',
     'jquery',
@@ -42,8 +52,11 @@ require([
              socialInstance,
              server,
              serverInstance) {
-    $.when.apply($, [social.init(socialInstance), server.init(serverInstance)])
+    $.when.apply($, [social.init(socialInstance), server.init(serverInstance), ad()])
         .then(function () {
+
+            $('.fb-ad').hide();
+            
             $('*').on('selectstart', function () {
                 return false;
             });
