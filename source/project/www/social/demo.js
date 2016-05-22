@@ -97,9 +97,7 @@ define(['jquery', 'plugins/format'], function ($, vk, format) {
 
         isUserInGroup: function (id) {
             return $.Deferred(function (defer) {
-                VK.api('groups.isMember', { user_id: id, group_id: ID_GROUP }, function (data) {
-                    defer.resolve(data.response.member === 1);
-                });
+                defer.resolve(false);
             });
         },
 

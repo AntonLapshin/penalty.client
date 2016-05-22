@@ -39,10 +39,16 @@ define([
         .then(function () {
             return options.load();
         })
-        .then(function () {
+        .then(function(){
+            return social.isUserInGroup(options.player.id);
+        })
+        .then(function (isMember) {
             lang.show();
             info.init(options.player);
-            timer.show(options.player.last);
+
+            if (!isMember)
+                timer.show(options.player.last);
+
             sound.show();
             top.show(options.player);
             return intro.show();
