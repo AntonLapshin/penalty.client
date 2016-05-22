@@ -31,7 +31,7 @@ function adsDelay(){
     return $.Deferred(function(defer){
         window.setTimeout(function(){
             defer.resolve();
-        }, 1);
+        }, 10000);
     });
 }
 
