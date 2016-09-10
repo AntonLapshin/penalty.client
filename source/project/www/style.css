@@ -33,3 +33,19 @@ body {
     width: 700px;
     height: 800px;
 }
+
+.juggling-ad {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	text-align: center;
+}
+
+.main-icon {
+	width: 200px;
+}
+
+.screenshot {
+	width: 200px;
+}

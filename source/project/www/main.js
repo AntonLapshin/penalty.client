@@ -32,7 +32,7 @@ function ad(){
 
     window.setTimeout(function(){
         defer.resolve();
-    }, 10000);
+    }, 15000);
 
     return defer;
 }
@@ -55,7 +55,7 @@ require([
     $.when.apply($, [social.init(socialInstance), server.init(serverInstance), ad()])
         .then(function () {
 
-            $('.fb-ad').hide();
+            $('.juggling-ad').hide();
             
             $('*').on('selectstart', function () {
                 return false;
