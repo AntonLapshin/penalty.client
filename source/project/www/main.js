@@ -32,7 +32,7 @@ function ad(){
 
     window.setTimeout(function(){
         defer.resolve();
-    }, 15000);
+    }, window.cfg.debug ? 1 : 10000);
 
     return defer;
 }
