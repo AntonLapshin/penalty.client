@@ -47,6 +47,10 @@ www/components/scores/style.css
 ----------------
 www/components/scores/style.css
 
+www/components/slideshowplanet/style.css
+----------------
+www/components/slideshowplanet/style.css
+
 www/components/sound/style.css
 ----------------
 www/components/sound/style.css
@@ -103,6 +107,7 @@ www/components/scores/style.css
 www/components/twist/style.css
 www/components/lang/style.css
 www/components/psychic/style.css
+www/components/slideshowplanet/style.css
 www/css/buttons.css
 www/css/button.css
 www/css/switch.css
@@ -138,6 +143,8 @@ text!c/member/view.html
 www/components//member/vm.js
 www/components//top/vm.js
 text!c/intro/view.html
+text!c/slideshowplanet/view.html
+www/components//slideshowplanet/vm.js
 www/components//intro/vm.js
 text!c/instruction/view.html
 www/components//instruction/vm.js
@@ -213,3 +220,5 @@ text!components/tournament/view.html
 www/components/tournament/vm.js
 text!components/twist/view.html
 www/components/twist/vm.js
+text!components/slideshowplanet/view.html
+www/components/slideshowplanet/vm.js
