@@ -5,9 +5,10 @@ define([
     'c/scores/vm',
     'c/psychic/vm',
     'c/twist/vm',
+    'c/slideshowplanet/vm',
     'engine/game',
     'plugins/localization'
-], function (ko, html, component, scores, psychic, twist, game, strings) {
+], function (ko, html, component, scores, psychic, twist, slideshowplanet, game, strings) {
 
     $('*').on('selectstart', function () {
         return false;
@@ -22,6 +23,7 @@ define([
         show: function (teamA, teamB, moveTeamAB, playerTeamAB) {
             scores.show(teamA, teamB, playerTeamAB, moveTeamAB);
             psychic.show();
+            slideshowplanet.show();
 
             var self = this;
 

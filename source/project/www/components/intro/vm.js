@@ -2,8 +2,9 @@ define([
     'ko',
     'text!./view.html',
     'plugins/component',
-    'plugins/localization'
-], function (ko, html, component, strings) {
+    'plugins/localization',
+    'c/slideshowplanet/vm'    
+], function (ko, html, component, strings, slideshowplanet) {
 
     var _defer;
 
@@ -16,6 +17,7 @@ define([
 
         show: function () {
             this.isVisible(true);
+            slideshowplanet.show();
             return $.Deferred(function (defer) {
                 _defer = defer;
             })

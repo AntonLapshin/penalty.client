@@ -1,0 +1,36 @@
+.slideshowplanet {
+    position: absolute;
+    z-index: 9999999;
+    cursor: pointer;
+    bottom: 450px;
+    right: -20px;
+    transition: all ease 400ms;
+}
+
+.slideshowplanet:hover {
+    right: -5px;
+}
+
+.slideshowplanet .logo {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background-color: #7fb60b;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+}
+.slideshowplanet .logo svg {
+    position: absolute;
+    transform: rotate(-20deg);
+}
+
+.slideshowplanet .logo .play {
+    top: -1px;
+    left: -4px;
+}
+
+.slideshowplanet .logo .shadow {
+    top: -3px;
+    left: 2px;
+}
