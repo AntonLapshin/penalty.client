@@ -11,7 +11,7 @@ define([
         },
 
         click: function () {
-            var win = window.open('http://slideshowplanet.com/landing?lang=ru', '_blank');
+            var win = window.open('http://slideshowplanet.com/ru/landing', '_blank');
             win.focus();
         },
 
